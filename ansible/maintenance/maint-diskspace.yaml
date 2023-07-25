@@ -11,6 +11,7 @@
     - name: print disk usage
       debug:
         var: disk_usage.stdout_lines
+  
     # - name: send discord message when disk space is over 80%
     #   uri:
     #     url: "your-webhook"
