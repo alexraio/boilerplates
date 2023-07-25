@@ -12,6 +12,7 @@
       debug:
         var: disk_usage
         verbosity: 2
+        msg: {{disk_usage}}
     # - name: send discord message when disk space is over 80%
     #   uri:
     #     url: "your-webhook"
