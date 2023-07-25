@@ -10,9 +10,7 @@
       register: disk_usage
     - name: print disk usage
       debug:
-        var: disk_usage
-        verbosity: 2
-        msg: {{disk_usage}}
+        var: disk_usage.stdout_lines
     # - name: send discord message when disk space is over 80%
     #   uri:
     #     url: "your-webhook"
